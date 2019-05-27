@@ -68,7 +68,9 @@ cd test_directory
 This "changes directory" and makes the named directory our new working
 directory. 
 
-> Question: How could we make sure that we moved?
+> Question: How could we make sure that we moved?.
+
+> Answer: We use `pwd`
 
 Let's get a few special things out of the way as well for command line. When
 we talk about folders, we don't always want to move "into" the next folder
@@ -120,6 +122,8 @@ why.
 
 > Hint: we learned how to list all the files up above.
 
+> Answer: Use `ls` to see the files inside of the current directory. We can see that a new file named "test_file.txt" has been created and "HELLO WORLD" is printed in it.
+
 The greater than says, "put that output into the following file instead."
 
 What if we want to read that file back out to the terminal?
@@ -145,6 +149,11 @@ Nice.
 
 > Let's save the output of the `curl` command to a file called `data.txt`. How
 would we do that?
+
+> Answer: 
+```bash
+curl https://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data > data.txt
+```
 
 Now that we have the data file, let's learn how to manipulate files.
 
@@ -192,6 +201,8 @@ ls -lh
 ```
 
 > What changed?
+
+> Answer: The way the format of the file size is displayed.
 
 If instead copying we just want to change the name of a file, we can do:
 
